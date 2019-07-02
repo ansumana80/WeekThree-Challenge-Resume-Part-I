@@ -39,7 +39,9 @@ public class ResumeApp {
         jobTitle = new Scanner(System.in).nextLine();
         System.out.println("Enter your at least one job description");
         jobDescription = new Scanner(System.in).nextLine();
+        System.out.println("Enter start date");
         startDate = new Scanner(System.in).nextLine();
+        System.out.println("Enter end date");
         endDate = new Scanner(System.in).nextLine();
         Resume resume = new Resume(companyName,jobTitle,jobDescription, startDate,endDate);                // Create a Resume object
         System.out.println(resume.toString());
@@ -49,14 +51,24 @@ public class ResumeApp {
         System.out.println("Now let's job skill and skill rating");
         System.out.println("You must enter at least three skills. Rate them as either Fundamental,Fundamental, Novice, " +
                 "intermediate, Advanced, Expert");
+        System.out.println("Enter first skill name");
         String skillName1 = new Scanner(System.in).nextLine();
+        System.out.println("Enter first skill rating");
         String skillRating1 = new Scanner(System.in).nextLine();
+        System.out.println("Enter second skill name");
         String skillName2 = new Scanner(System.in).nextLine();
+        System.out.println("Enter first skill rating");
         String skillRating2 = new Scanner(System.in).nextLine();
+        System.out.println("Enter third skill name");
         String skillName3 = new Scanner(System.in).nextLine();
+        System.out.println("Enter third skill rating");
         String skillRating3 = new Scanner(System.in).nextLine();
-        Skill skill = new Skill(skillName, skillRating);
-        System.out.println(skill.toString());
+        Skill skill1 = new Skill(skillName1, skillRating1);
+        Skill skill2 = new Skill(skillName2, skillRating2);
+        Skill skill3 = new Skill(skillName3, skillRating3);
+        System.out.println(skill1.toString());
+        System.out.println(skill2.toString());
+        System.out.println(skill3.toString());
         System.out.println("****************************");
 
         System.out.println("Now let enter education");
@@ -74,8 +86,10 @@ public class ResumeApp {
 
         System.out.println("****************************");
 
+        System.out.println("Thanks for apply for this exciting position");
+        System.out.println("We will get back to you soon after reviewing your resume");
 
 
-    }
+        }
 
 }
