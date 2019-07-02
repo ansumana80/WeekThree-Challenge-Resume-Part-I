@@ -66,5 +66,9 @@ public class Resume
         this.endDate = endDate;
     }
 
+    public String Resume()
+    {
+        return getCompanyName()+ " "+ getJobTitle()+ " "+ getJobDescription()+ " "+ getStartDate()+ " "+ getEndDate();
+    }
 
 }

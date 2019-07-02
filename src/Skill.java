@@ -33,4 +33,11 @@ public class Skill extends Resume
     public void setSkillRating(String skillRating) {
         this.skillRating = skillRating;
     }
+
+    public String Skill()
+    {
+        return getSkillName()+ " "+ getSkillRating();
+    }
+
+
 }

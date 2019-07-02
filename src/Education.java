@@ -56,4 +56,9 @@ public class Education extends Resume
     public void setGradYear(int gradYear) {
         this.gradYear = gradYear;
     }
+
+    public String Education()
+    {
+        return getuName() + " " + getuMajor()+ " "+ getDegreeType()+ " "+ getGradYear();
+    }
 }
