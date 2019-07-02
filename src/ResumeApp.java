@@ -7,9 +7,9 @@ public class ResumeApp
 {
 
     public static void main(String [] args) {
-        Scanner applicant = new Scanner(System.in);  // Create a Scanner resume
-        Address address = new Address();             // Create a Address object
+        Scanner applicant = new Scanner(System.in);  // Create a Scanner applicant
         Resume Resume = new Resume();                // Create a Resume object
+        Address address = new Address();             // Create a Address object
         Skill skill = new Skill();                   // Create a Skill object
         Education education = new Education();       // Create a education object
 
@@ -19,7 +19,7 @@ public class ResumeApp
 
         System.out.println("Enter your full name");
         String userResumeResponse = applicant.nextLine();
-        System.out.println("---- user" + userResumeResponse);
+
         address.setPersonName(userResumeResponse);
 
         System.out.println("Enter your Phone number");
