@@ -19,33 +19,33 @@ public class ResumeApp {
         int phoneNum;
         String emailAddress;
 
-//
-//        System.out.println("Now can your personal information");
-//        System.out.println("Enter your full name");
-//         personName= new Scanner(System.in).nextLine();
-//        System.out.println("Enter your phone number");
-//        phoneNum = new Scanner(System.in).nextInt();
-//        System.out.println("Enter your email address");
-//        emailAddress = new Scanner(System.in).nextLine();
-//        Person person = new Person(personName, phoneNum, emailAddress);
-//        System.out.println(person.toString());
-//
-//        System.out.println("****************************");
 
-//        System.out.println("Now let's enter work experience");
-//        System.out.println("Enter your current or most recent employer name");
-//        companyName = new Scanner(System.in).nextLine();
-//        System.out.println("Enter your job title");
-//        jobTitle = new Scanner(System.in).nextLine();
-//        System.out.println("Enter your at least one job description");
-//        jobDescription = new Scanner(System.in).nextLine();
-//        startDate = new Scanner(System.in).nextLine();
-//        endDate = new Scanner(System.in).nextLine();
-//        Resume resume = new Resume(companyName,jobTitle,jobDescription, startDate,endDate);                // Create a Resume object
-//        System.out.println(resume.toString());
-//
-//        System.out.println("****************************");
-//
+        System.out.println("Now can your personal information");
+        System.out.println("Enter your full name");
+         personName= new Scanner(System.in).nextLine();
+        System.out.println("Enter your phone number");
+        phoneNum = new Scanner(System.in).nextInt();
+        System.out.println("Enter your email address");
+        emailAddress = new Scanner(System.in).nextLine();
+        Person person = new Person(personName, phoneNum, emailAddress);
+        System.out.println(person.toString());
+
+        System.out.println("****************************");
+
+        System.out.println("Now let's enter work experience");
+        System.out.println("Enter your current or most recent employer name");
+        companyName = new Scanner(System.in).nextLine();
+        System.out.println("Enter your job title");
+        jobTitle = new Scanner(System.in).nextLine();
+        System.out.println("Enter your at least one job description");
+        jobDescription = new Scanner(System.in).nextLine();
+        startDate = new Scanner(System.in).nextLine();
+        endDate = new Scanner(System.in).nextLine();
+        Resume resume = new Resume(companyName,jobTitle,jobDescription, startDate,endDate);                // Create a Resume object
+        System.out.println(resume.toString());
+
+        System.out.println("****************************");
+
         System.out.println("Now let's job skill and skill rating");
         System.out.println("You must enter at least three skills. Rate them as either Fundamental,Fundamental, Novice, " +
                 "intermediate, Advanced, Expert");
