@@ -1,24 +1,23 @@
 public class Resume
 {
-    private String companyName="";
-    private String jobTitle="";
-    private String jobDescription="";
-    private int startDate;
-    private int endDate;
+    private String companyName;
+    private String jobTitle;
+    private String jobDescription;
+    private String startDate;
+    private String endDate;
 
 
     public Resume()
     {
-        //default runs in the background
-        super();
+
         companyName="";
         jobTitle="";
         jobDescription="";
-        startDate=0;
-        endDate=0;
+        startDate="";
+        endDate="";
 
     }
-    public Resume(String companyName, String jobTitle, String jobDescription, int startDate, int endDate)
+    public Resume(String companyName, String jobTitle, String jobDescription, String startDate, String endDate)
     {
         this.companyName = companyName;
         this.jobTitle = jobTitle;
@@ -50,25 +49,38 @@ public class Resume
     public void setJobDescription(String jobDescription) {
         this.jobDescription = jobDescription;
     }
-    public int getStartDate() {
+
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(int startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public int getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(int endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 
     public String Resume()
     {
-        return getCompanyName()+ " "+ getJobTitle()+ " "+ getJobDescription()+ " "+ getStartDate()+ " "+ getEndDate();
+        return("Company: " +getCompanyName()+ "\n"+ "Job Title: " +getJobTitle()+ "\n"+
+                "Job Description: " +getJobDescription()+ "\n"+
+                "Start Date: " +getStartDate()+ "\n"+ ("End Date: " +getEndDate()+ "\n"));
     }
 
+    @Override
+    public String toString() {
+        return "Resume{" +
+                "companyName='" + companyName + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", jobDescription='" + jobDescription + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                '}';
+    }
 }

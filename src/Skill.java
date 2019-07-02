@@ -6,15 +6,14 @@ public class Skill extends Resume
 
     public Skill ()
     {
-        super();
+//        super();
         this.skillName="";
         this.skillRating="";
     }
 
-    public Skill(String companyName, String jobTitle, int startDate, int endDate, String jobDescription,
-                 String skillName, String skillRating)
+    public Skill(String skillName, String skillRating)
     {
-        super(companyName, jobTitle, jobDescription, startDate, endDate);
+        super();
         this.skillName = skillName;
         this.skillRating = skillRating;
     }
@@ -36,9 +35,16 @@ public class Skill extends Resume
     }
 
     public String Skill()
+
     {
-        return getSkillName()+ " "+ getSkillRating();
+        return ("Skill Name: " +getSkillName()+ "\n"+ "Skill Rating: " +getSkillRating()+"\n");
     }
 
-
+    @Override
+    public String toString() {
+        return "Skill{" +
+                "skillName='" + skillName + '\'' +
+                ", skillRating='" + skillRating + '\'' +
+                '}';
+    }
 }

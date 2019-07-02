@@ -8,15 +8,14 @@ public class Education extends Resume
 
     public Education()
     {
-        //default runs in the background
-        super();
+//        super();
         uName="";
         uMajor="";
         degreeType="associate";
         gradYear=0;
     }
 
-    public Education(String companyName, String jobTitle, String jobDescription, int startDate, int endDate,
+    public Education(String companyName, String jobTitle, String jobDescription, String startDate, String endDate,
                             String uName, String uMajor, String degreeType, int gradYear) {
         super(companyName, jobTitle, jobDescription, startDate, endDate);
         this.uName = uName;
@@ -59,6 +58,17 @@ public class Education extends Resume
 
     public String Education()
     {
-        return getuName() + " " + getuMajor()+ " "+ getDegreeType()+ " "+ getGradYear();
+        return("University: " +getuName() + "\n"  + "Major: " +getuMajor()+ "\n" + "Degree: "+getDegreeType()+
+                "\n" + "Graduation Year: " +getGradYear()+ "\n");
+    }
+
+    @Override
+    public String toString() {
+        return "Education{" +
+                "uName='" + uName + '\'' +
+                ", uMajor='" + uMajor + '\'' +
+                ", degreeType='" + degreeType + '\'' +
+                ", gradYear=" + gradYear +
+                '}';
     }
 }

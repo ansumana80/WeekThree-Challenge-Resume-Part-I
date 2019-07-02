@@ -1,10 +1,10 @@
-public class Address extends Resume
+public class Person extends Resume
 {
     private String PersonName="";
     private int phoneNum=0;
     private String emailAddress="";
 
-    public Address()
+    public Person()
     {
         super();
         PersonName="";
@@ -12,13 +12,15 @@ public class Address extends Resume
         emailAddress="";
     }
 
-    public Address(String companyName, String jobTitle, String jobDescription, int startDate, int endDate,
-                   String personName, int phoneNum, String emailAddress) {
-        super(companyName, jobTitle, jobDescription, startDate, endDate);
-        PersonName = personName;
-        this.phoneNum = phoneNum;
-        this.emailAddress = emailAddress;
+    public Person (String personName, int phoneNum, String emailAddress){
+        super();
+        this.PersonName= personName;
+        this.phoneNum=phoneNum;
+        this.emailAddress=emailAddress;
+
+
     }
+
 
 
 
@@ -47,10 +49,20 @@ public class Address extends Resume
         this.emailAddress = emailAddress;
     }
 
-    public  String printAddress()
-    {
 
-        return this.getPersonName() + " "+ this.getPhoneNum()+ " "+ this.getEmailAddress();
+    public String Person()
+    {
+        return ("Full Name: " +getPersonName() + "\n" + "Phone: " +getPhoneNum() + "\n" + "Email: " +getEmailAddress()
+                + "\n");
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "PersonName='" + PersonName + '\'' +
+                ", phoneNum=" + phoneNum +
+                ", emailAddress='" + emailAddress + '\'' +
+                '}';
     }
 }
 
