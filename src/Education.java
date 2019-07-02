@@ -15,9 +15,8 @@ public class Education extends Resume
         gradYear=0;
     }
 
-    public Education(String companyName, String jobTitle, String jobDescription, String startDate, String endDate,
-                            String uName, String uMajor, String degreeType, int gradYear) {
-        super(companyName, jobTitle, jobDescription, startDate, endDate);
+    public Education(String uName, String uMajor, String degreeType, int gradYear) {
+        super();
         this.uName = uName;
         this.uMajor = uMajor;
         this.degreeType = degreeType;

@@ -58,63 +58,22 @@ public class ResumeApp {
         Skill skill = new Skill(skillName, skillRating);
         System.out.println(skill.toString());
         System.out.println("****************************");
-//
-//
 
-//        Resume(String companyName, String jobTitle, String jobDescription, int startDate, int endDate)
-//        Skill skill = new Skill();                   // Create a Skill object
-//        Education education = new Education();       // Create a education object
-//
-//        Person Person = new Person();                // Create a Address object
-//        System.out.println("Lets'Prepare your resume");
-//        System.out.println("First enter your personal contact information");
-//        System.out.println("Enter your full name");
-//        String userName = applicant.nextLine();
-//        System.out.println("Enter your Phone number");
-//        int userPhone = applicant.nextInt();
-//        System.out.println("Enter your email address");
-//        String userEmail = applicant.next();
+        System.out.println("Now let enter education");
 
+        System.out.println("Enter University");
+        String uName= new Scanner(System.in).nextLine();
+        System.out.println("Enter your major");
+        String uMajor= new Scanner(System.in).nextLine();
+        System.out.println("Enter your degree Type");
+        String degreeType = new Scanner(System.in).nextLine();
+        System.out.println("Enter your graduation year");
+        int gradYear = new Scanner(System.in).nextInt();
+        Education education = new Education(uName, uMajor, degreeType,gradYear);
+        System.out.println(education.toString());
 
-/*****
- System.out.println("Now let's enter work experience");
- System.out.println("Enter your current or most recent employer");
- userResumeResponse = applicant.nextLine();
+        System.out.println("****************************");
 
- System.out.println("Enter your job title");
- userResumeResponse = applicant.nextLine();
-
- System.out.println("Enter your at least one job description");
- userResumeResponse = applicant.nextLine();
-
- System.out.println("You must enter at least three skills and rate them");
- System.out.println("Enter your skill 1");
- userResumeResponse = applicant.nextLine();
- System.out.println("Enter your skill 2");
- userResumeResponse = applicant.nextLine();
- System.out.println("Enter your skill 3");
- userResumeResponse = applicant.nextLine();
-
- System.out.println("Enter your start date");
- userResumeNum = applicant.nextInt();
- System.out.println("Enter your end date");
- userResumeNum = applicant.nextInt();
-
- System.out.println("Now let's enter your education history");
- System.out.println("Name of college/university attended");
- userResumeResponse = applicant.nextLine();
-
- System.out.println("Enter your major");
- userResumeResponse = applicant.nextLine();
-
- System.out.println("Enter degree earned");
- userResumeResponse = applicant.nextLine();
-
- System.out.println("Enter graduation year");
- userResumeResponse = applicant.nextLine();
-
-
- ****/
 
 
     }
