@@ -11,7 +11,8 @@ public class Skill extends Resume
         this.skillRating="";
     }
 
-    public Skill(String companyName, String jobTitle, int startDate, int endDate, String jobDescription, String skillName, String skillRating)
+    public Skill(String companyName, String jobTitle, int startDate, int endDate, String jobDescription,
+                 String skillName, String skillRating)
     {
         super(companyName, jobTitle, jobDescription, startDate, endDate);
         this.skillName = skillName;
